@@ -44,9 +44,9 @@ exports.login = async (req, res) => {
     const token = create_token(user);
     console.log(token)
 
-    const { _id, username } = user
+    const { _id, username, account_number } = user
 
-    return res.status(200).json({ _id, username, token })
+    return res.status(200).json({ _id, username, account_number, token })
   } catch (err) {
     console.log(err.message)
     return res.sendStatus(500)
