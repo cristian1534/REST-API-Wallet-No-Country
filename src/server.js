@@ -33,16 +33,29 @@ app.get("/", (req, res) => {
           body {
             background-color: black;
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            margin: 0;
           }
           h1 {
             color: yellow;
             text-align: center;
             margin-top: 25rem;
           }
+          img {
+            border-radius: 5px;
+            max-width: 100%;
+            max-height: 100%;
+          }
         </style>
       </head>
       <body>
         <h1>PENGUIN-WALLET SERVER RUNNING.</h1>
+        <br/>
+        <img src="https://i.pinimg.com/originals/ad/4b/81/ad4b818ef5f4e17c0ba158268274790f.gif" alt="server-working" />
       </body>
     </html>
   `);
