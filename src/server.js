@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
     res.send(`
     <html>
       <head>
-        <title>PENGUIN-WALLET</title>
+        <title>PINGUI-WALLET</title>
         <style>
           body {
             background-color: black;
@@ -53,7 +53,7 @@ app.get("/", (req, res) => {
         </style>
       </head>
       <body>
-        <h1>PENGUIN-WALLET SERVER RUNNING.</h1>
+        <h1>PINGUI-WALLET SERVER RUNNING.</h1>
         <br/>
         <img src="https://i.pinimg.com/originals/ad/4b/81/ad4b818ef5f4e17c0ba158268274790f.gif" alt="server-working" />
       </body>
