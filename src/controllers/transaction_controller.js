@@ -11,7 +11,7 @@ exports.create_one_transaction = async (req, res) => {
     const user = req.user;
 
     if (!card || !concept || !receiver_account || !amount)
-      return res.sendStatus(400);
+      return res.status(400);
 
     if (concept === "transferencia") {
       const transfer = await get_user_account_number(receiver_account);
